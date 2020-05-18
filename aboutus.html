@@ -14,7 +14,7 @@
   
   
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="./assets/favicon.ico" rel="icon">
+  <link rel="icon" href="./assets/images/logo.jpeg">
 
   <link href="./all.css" rel="stylesheet">
   <link rel="stylesheet" href="./bootstrap.min.css">
@@ -26,8 +26,9 @@
 
   <link href="./styles.css" rel="stylesheet"></head>
 
-<body> <!-- Add your content of header -->
-  <header>
+<body id="pagebody">
+   <!-- Add your content of header -->
+  <header class="fixed-top">
     <nav class="nav1bar1 nav1bar1-default active">
         <div class="container1">
           <div class="nav1bar1-header">
@@ -64,109 +65,233 @@
         </div>
       </nav>
 </header>
-
-<div class="section-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <h1 class="text-center">Moon</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus at sem quis varius. 
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis magna sagittis elit sagittis, at hendrerit lorem venenatis. Morbi accumsan iaculis blandit. Cras ultrices hendrerit nisl.</p>
-          
-          <div class="section-container-spacer">
-            <img src="./assets/images/img-10.png" alt="" class="img-responsive reveal-content" data-action="zoom">
-          </div>
-
-          <!-- <div class="row">
-            <div class="col-xs-6">
-              <img src="./assets/images/img-04.jpg" alt="" class="img-responsive reveal-content" data-action="zoom">
+<div class="container">
+  <div class="row">
+    <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="./nurse.html">My Nurse</a></li>
+        <li class="breadcrumb-item"><a href="./wallet.html">Wallet</a></li>
+        <li class="breadcrumb-item active">About</li>
+    </ol>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+       <h1>About Us</h1>
+       <hr>
+    </div>
+  </div>
+  <div class="row row-content">
+    <div class="col-sm-6">
+        <h2>Our History</h2>
+        <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+        <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <h3 class="card-header bg-primary text-white">Facts at a Glance</h3>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-6">Started</dt>
+                    <dd class="col-6">3 Feb. 2013</dd>
+                    <dt class="col-6">Major Stack Holder</dt>
+                    <dd class="col-6">HK Fine Foods Inc</dd>
+                    <dt class="col-6">Last Year's Turnover</dt>
+                    <dd class="col-6">$1,250,375</dd>
+                    <dt class="col-6">Employees</dt>
+                    <dd class="col-6">40</dd>
+                </dl>
             </div>
-            <div class="col-xs-6">
-              <img src="./assets/images/img-07.jpg" alt="" class="img-responsive reveal-content" data-action="zoom">
+        </div>
+    </div>
+    <div class="col-12 mt-3">
+        <div class="card card-body bg-light">
+            <blockquote class="blockquote">
+                <p class="mb-0">
+                    You better cut the pizza in four pieces because I'm not hungryenough to eat six.
+                </p>
+                <footer class="blockquote-footer">
+                    Yogi Berra,
+                    <cite title="Source Title">The Wit and Wisdom of Yogi Berra, P.Pope, Diversion Books, 2014.</cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+<div class="row row-content">
+    <div class="col-sm-12">
+        <h2>Corporate Leadership</h2>
+        <!-- Accordions -->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" role="tab" id="peterhead">
+                <h3 class="mb-0">
+                    <a data-toggle="collapse" data-target="#peter">
+                    Peter Pan <small>Chief Epicurious Officer</small>
+                    </a>
+                </h3>
+                </div>
+                <div class="collapse show" id="peter" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="d-none d-sm-block">
+                            Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+            <div class="card">
+                <div class="card-header" role="tab" id="dannyhead">
+                    <h3 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#danny">
+                        Dhanasekaran Witherspoon <small>Chief Food Officer</small>
+                        </a>
+                    </h3>
+                </div>
+                <div class="collapse" id="danny" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="d-none d-sm-block">
+                            Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div> -->
+            <div class="card">
+                <div class="card-header" role="tab" id="agumbehead">
+                    <h3 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+                        Agumbe Tang <small>Chief Taste Officer</small>
+                        </a>
+                    </h3>
+                </div>
+                <div class="collapse" id="agumbe" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="d-none d-sm-block">
+                            Blessed with the most discerning gustatory sense, Agumbe, our CTO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="card-header" role="tab" id="albertohead">
+                    <h3 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#alberto">
+                        Alberto Somayya <small>Executive Chef</small>
+                        </a>
+                    </h3>
+                </div>
+                <div class="collapse" id="alberto" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="d-none d-sm-block">
+                            Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em>
+                        </p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+      </div>
+    </div>
+    <div class="row row-content">
+      <div class="col-12">
+         <h3>Send us your Feedback</h3>
+      </div>
+       <div class="col-12 col-md-9">
+           <form>
+               <div class="form-group row">
+                   <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                   <div class="col-md-10">
+                       <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                   </div>
+               </div>
+               <div class="form-group row">
+                   <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                   <div class="col-md-10">
+                       <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                   </div>
+               </div>
+               <div class="form-group row">
+                   <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                   <div class="col-5 col-md-3">
+                       <input type="text" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+                   </div>
+                   <div class="col-7 col-md-7">
+                       <input type="text" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                   </div>
+               </div>
+               <div class="form-group row">
+                   <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                   <div class="col-md-10">
+                       <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                   </div>
+               </div>
+               <div class="form-group row">
+                   <div class="col-md-6 offset-md-2">
+                       <div class="form-check">
+                           <input type="checkbox" class="form-check-input" name="approve" id="approve">
+                           <label for="approve" class="form-check-label ml-4">
+                               <Strong>May we contact you?</Strong>
+                           </label>
+                       </div>
+                   </div>
+                   <div class="col-md-3 offset-md-1">
+                       <select class="form-control">
+                           <option>Tel</option>
+                           <option>Email</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="form-group row">
+                   <label for="feedback" class="col-md-2 col-form-label">Feedback</label>
+                   <div class="col-md-10">
+                       <textarea class="form-control" id="feedback" name="feedback" placeholder="Your Feedback" rows="10"></textarea>
+                   </div>
+               </div>
+               <div class="form-group row">
+                   <div class="col-md-10 offset-md-2">
+                       <button type="submit" class="btn btn-primary">Send Feedback</button>                        
+                   </div>
+               </div>
+           </form>
        </div>
-      </div>
-    </div>
+        <div class="col-12 col-md">
+       </div>
   </div>
-
-  <div class="section-container">
-    <div class="container">
-      <div class="row section-container-spacer">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <h2 class="text-center">More</h2>
-          <div class="section-container-spacer">
-            <p>Praesent at feugiat est, at faucibus ipsum. Aenean condimentum mauris vel malesuada pulvinar. Vestibulum sit amet hendrerit leo, quis vehicula mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>  
-          <img src="./assets/images/img-05.jpg" alt="" class="img-responsive reveal-content" data-action="zoom">
-        </div>  
-      </div>
-    </div>
-  </div>
-
-  <div class="section-container">
-    <div class="container text-center">
-      <div class="row section-container-spacer">
-        <div class="col-xs-12 col-md-12">
-          
-          <h3>Do you like it ?</h3>
-          <p>
-            <a href="https://facebook.com/" class="social-round-icon fa-icon" title="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/" class="social-round-icon fa-icon" title="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/" class="social-round-icon fa-icon" title="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </p>
-        </div>  
-      </div>
-    
-    </div>
-  </div>
-
-<footer class="footer-container white-text-container">
-  <div class="container">
-    <div class="row">
-
-     
-      <div class="col-xs-12">
-        <h3>Mountain</h3>
+</div>
+  
+<footer class="footer-container1 white-text-container1 pb-0">
+  <div class="container1">
+    <div class="row" id="text-sm-center">
+      <div class="col1-xs-12">
+        <h-3>Nanarse</h-3>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-7">
-            <p><small>Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></small>
+          <div class="col1-xs-12 col1-sm-7">
+            <p><small>Website created by <a href="https://github.com/Saadkhanhere">Saad Khan.</a></small>
             </p>
           </div>
-          <div class="col-xs-12 col-sm-5">
-            <p class="text-right">
-              <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="">
+          <div class="col1-xs-12 col1-sm-5">
+            <p class="para">
+              <a href="https://www.facebook.com/profile.php?id=100004766675410" class="social-round-icon white-round-icon fa-icon" title="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
               <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="https://www.linkedin.com/" class="social-round-icon white-round-icon fa-icon" title="">
+              <a href="https://www.linkedin.com/feed/" class="social-round-icon white-round-icon fa-icon" title="">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
             </p>
           </div>
         </div>
-        
-        
+      </div>
+    </div>
+    <div class="row justify-content-center">             
+      <div class="col-auto">
+          <p><small>© Copyright 2020 Nanarse Team</small> </p>
       </div>
     </div>
   </div>
 </footer>
-
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
     navActivePage();
@@ -187,6 +312,6 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.0cf8b554.js"></script></body>
+--> <script type="text/javascript" src="./main.0cf8b554.unminifyed.js"></script></body>
 
 </html>

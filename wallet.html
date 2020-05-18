@@ -25,8 +25,8 @@
     
     <link href="./styles.css" rel="stylesheet">
 </head>
-<body>
-  <header>
+<body id="pagebody">
+  <header class="fixed-top">
     <nav class="nav1bar1 nav1bar1-default active">
         <div class="container1">
           <div class="nav1bar1-header">
@@ -63,13 +63,143 @@
         </div>
       </nav>
 </header>
-     
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-          navActivePage();
-          scrollRevelation('.reveal');
-        });
-      </script>
-      <script type="text/javascript" src="./main.0cf8b554.js"></script>  
+<div class="container"> 
+  <div class="row">
+    <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="./nurse.html">My Nurse</a></li>
+        <li class="breadcrumb-item active">Wallet</li>
+    </ol>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+       <h1>Wallet</h1>
+       <hr>
+    </div>
+  </div>
+    
+  <div class="row row-content">
+    <div class="col-sm-6">
+        <h1>Your History</h1>
+        <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+        <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <h3 class="card-header bg-primary text-white">Nurse</h3>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-6">Started</dt>
+                    <dd class="col-6">3 Feb. 2013</dd>
+                    <dt class="col-6">Service</dt>
+                    <dd class="col-6">Pysical Therapy</dd>
+                    <dt class="col-6">Continue</dt>
+                    <dd class="col-6">No</dd>
+                    <dt class="col-6">Charges</dt>
+                    <dd class="col-6">$40</dd>
+                    <dt class="col-6">Status</dt>
+                    <dd class="col-6">Paid</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6"></div>
+    <div class="col-sm">
+        <div class="card">
+            <h3 class="card-header bg-primary text-white">Nurse</h3>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-6">Started</dt>
+                    <dd class="col-6">5 June. 2013</dd>
+                    <dt class="col-6">Service</dt>
+                    <dd class="col-6">Emergency</dd>
+                    <dt class="col-6">Continue</dt>
+                    <dd class="col-6">No</dd>
+                    <dt class="col-6">Charges</dt>
+                    <dd class="col-6">$60</dd>
+                    <dt class="col-6">Status</dt>
+                    <dd class="col-6">Paid</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-3">
+        <div class="card card-body bg-light">
+            <blockquote class="blockquote">
+                <h3>Remarks</h3>
+                <p class="mb-0">
+                    <!-- You better cut the pizza in four pieces because I'm not hungryenough to eat six. -->
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, cum veniam et, labore nisi odit earum est numquam consequuntur perspiciatis ex qui ea sunt itaque! Repudiandae reiciendis sunt aut architecto.
+                </p>
+                <footer class="blockquote-footer">
+                    Yogi Berra,
+                    <cite title="Source Title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      <!-- The Wit and Wisdom of Yogi Berra, P.Pope, Diversion Books, 2014. -->
+                    </cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-container1 white-text-container1 pb-0">
+  <div class="container1">
+    <div class="row" id="text-sm-center">
+      <div class="col1-xs-12">
+        <h-3>Nanarse</h-3>
+
+        <div class="row">
+          <div class="col1-xs-12 col1-sm-7">
+            <p><small>Website created by <a href="https://github.com/Saadkhanhere">Saad Khan.</a></small>
+            </p>
+          </div>
+          <div class="col1-xs-12 col1-sm-5">
+            <p class="para">
+              <a href="https://www.facebook.com/profile.php?id=100004766675410" class="social-round-icon white-round-icon fa-icon" title="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/feed/" class="social-round-icon white-round-icon fa-icon" title="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">             
+      <div class="col-auto">
+          <p><small>© Copyright 2020 Nanarse Team</small> </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    nav1ActivePage();
+    scrollRevelation('.reveal');
+  });
+</script>
+  <!-- Carousel using one button/advanced way -->
+  <!-- <script>
+    $("#carouselButton").click(function(){
+        if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+            $("#mycarousel").carousel('pause');
+            $("#carouselButton").children("span").removeClass('fa-pause');
+            $("#carouselButton").children("span").addClass('fa-play');
+        }
+        else if ($("#carouselButton").children("span").hasClass('fa-play')){
+            $("#mycarousel").carousel('cycle');
+            $("#carouselButton").children("span").removeClass('fa-play');
+            $("#carouselButton").children("span").addClass('fa-pause');                    
+        }
+    });
+</script> -->
+
+<script type="text/javascript" src="./main.0cf8b554.unminifyed.js"></script>   
 </body>
 </html>

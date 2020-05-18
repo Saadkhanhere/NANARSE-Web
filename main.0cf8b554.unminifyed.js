@@ -5652,23 +5652,23 @@
                 function e(e) {
                     return this.each(function () {
                         var i = t(this),
-                            o = i.data("bs.carousel"),
+                            o = i.data("bs.carousel1"),
                             r = t.extend({}, n.DEFAULTS, i.data(), "object" == typeof e && e),
                             s = "string" == typeof e ? e : r.slide;
-                        o || i.data("bs.carousel", (o = new n(this, r))), "number" == typeof e ? o.to(e) : s ? o[s]() : r.interval && o.pause().cycle();
+                        o || i.data("bs.carousel1", (o = new n(this, r))), "number" == typeof e ? o.to(e) : s ? o[s]() : r.interval && o.pause().cycle();
                     });
                 }
                 var n = function (e, n) {
                     (this.$element = t(e)),
-                        (this.$indicators = this.$element.find(".carousel-indicators")),
+                        (this.$indicators = this.$element.find(".carousel1-indicators")),
                         (this.options = n),
                         (this.paused = null),
                         (this.sliding = null),
                         (this.interval = null),
                         (this.$active = null),
                         (this.$items = null),
-                        this.options.keyboard && this.$element.on("keydown.bs.carousel", t.proxy(this.keydown, this)),
-                        "hover" == this.options.pause && !("ontouchstart" in document.documentElement) && this.$element.on("mouseenter.bs.carousel", t.proxy(this.pause, this)).on("mouseleave.bs.carousel", t.proxy(this.cycle, this));
+                        this.options.keyboard && this.$element.on("keydown.bs.carousel1", t.proxy(this.keydown, this)),
+                        "hover" == this.options.pause && !("ontouchstart" in document.documentElement) && this.$element.on("mouseenter.bs.carousel1", t.proxy(this.pause, this)).on("mouseleave.bs.carousel1", t.proxy(this.cycle, this));
                 };
                 (n.VERSION = "3.3.7"),
                     (n.TRANSITION_DURATION = 600),
@@ -5706,7 +5706,7 @@
                             n = this.getItemIndex((this.$active = this.$element.find(".item.active")));
                         if (!(t > this.$items.length - 1 || t < 0))
                             return this.sliding
-                                ? this.$element.one("slid.bs.carousel", function () {
+                                ? this.$element.one("slid.bs.carousel1", function () {
                                       e.to(t);
                                   })
                                 : n == t
@@ -5735,14 +5735,14 @@
                             l = this;
                         if (r.hasClass("active")) return (this.sliding = !1);
                         var c = r[0],
-                            u = t.Event("slide.bs.carousel", { relatedTarget: c, direction: a });
+                            u = t.Event("slide.bs.carousel1", { relatedTarget: c, direction: a });
                         if ((this.$element.trigger(u), !u.isDefaultPrevented())) {
                             if (((this.sliding = !0), s && this.pause(), this.$indicators.length)) {
                                 this.$indicators.find(".active").removeClass("active");
                                 var f = t(this.$indicators.children()[this.getItemIndex(r)]);
                                 f && f.addClass("active");
                             }
-                            var d = t.Event("slid.bs.carousel", { relatedTarget: c, direction: a });
+                            var d = t.Event("slid.bs.carousel1", { relatedTarget: c, direction: a });
                             return (
                                 t.support.transition && this.$element.hasClass("slide")
                                     ? (r.addClass(e),
@@ -5765,25 +5765,25 @@
                             );
                         }
                     });
-                var i = t.fn.carousel;
-                (t.fn.carousel = e),
-                    (t.fn.carousel.Constructor = n),
-                    (t.fn.carousel.noConflict = function () {
-                        return (t.fn.carousel = i), this;
+                var i = t.fn.carousel1;
+                (t.fn.carousel1 = e),
+                    (t.fn.carousel1.Constructor = n),
+                    (t.fn.carousel1.noConflict = function () {
+                        return (t.fn.carousel1 = i), this;
                     });
                 var o = function (n) {
                     var i,
                         o = t(this),
                         r = t(o.attr("data-target") || ((i = o.attr("href")) && i.replace(/.*(?=#[^\s]+$)/, "")));
-                    if (r.hasClass("carousel")) {
+                    if (r.hasClass("carousel1")) {
                         var s = t.extend({}, r.data(), o.data()),
                             a = o.attr("data-slide-to");
-                        a && (s.interval = !1), e.call(r, s), a && r.data("bs.carousel").to(a), n.preventDefault();
+                        a && (s.interval = !1), e.call(r, s), a && r.data("bs.carousel1").to(a), n.preventDefault();
                     }
                 };
-                t(document).on("click.bs.carousel.data-api", "[data-slide]", o).on("click.bs.carousel.data-api", "[data-slide-to]", o),
+                t(document).on("click.bs.carousel1.data-api", "[data-slide]", o).on("click.bs.carousel1.data-api", "[data-slide-to]", o),
                     t(window).on("load", function () {
-                        t('[data-ride="carousel"]').each(function () {
+                        t('[data-ride="carousel1"]').each(function () {
                             var n = t(this);
                             e.call(n, n.data());
                         });
