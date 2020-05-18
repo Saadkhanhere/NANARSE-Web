@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="This website have been developped by saad khan" name="Saad Khan">
+    
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+    <link rel="icon" href="./assets/images/logo.jpeg">
+    
+    <link href="./all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!-- in order to work collapseable behaviour of nav1bar1 in smaller screens, keep the exact order of js files as below -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    
+    <title>Nanarse</title>
+    
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="nav1bar1 nav1bar1-default active">
+        <div class="container1">
+          <div class="nav1bar1-header">
+            <button type="button" class="nav1bar1-toggle collapsed" data-toggle="collapse" data-target="#nav1bar1-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle nav1igation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="nav1bar1-brand" href="./index.html" title="Nanarse">
+              <img src="./assets/images/logo.jpeg" class="nav1bar1-logo-img" alt="Nanarse-logo" height="40px" width="50px">
+              Nanarse
+            </a>
+          </div>
+    
+          <div class="collapse nav1bar1-collapse" id="nav1bar1-collapse">
+            <ul class="nav1 nav1bar1-nav1 nav1bar1-right">
+              <li><a href="./index.html" title=""><i class="fas fa-home"></i> Home</a></li>
+              <li class="menu" id="menu">
+                <a href="#" title=""><i class="fab fa-servicestack"></i> Services</a>
+                <ul class="dropdown">
+                    <li><a href="#">Nursing Services</a></li>
+                    <li><a href="#">Physical Therapy</a></li>
+                    <li><a href="#">Speech Therapy</a></li>
+                </ul>
+                
+               
+              </li>
+              <li><a href="./nurse.html" title=""><i class="fas fa-user-nurse"></i> My Nurse</a></li>
+              <li><a href="./wallet.html" title=""><i class="fas fa-wallet"></i> Wallet</a></li>
+              <li><a href="./aboutus.html" title=""><i></i> About</a></li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+</header>
+     
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+          navActivePage();
+          scrollRevelation('.reveal');
+        });
+      </script>
+      <script type="text/javascript" src="./main.0cf8b554.js"></script>  
+</body>
+</html>
