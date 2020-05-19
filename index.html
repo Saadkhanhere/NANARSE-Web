@@ -14,18 +14,22 @@
   
   
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link rel="icon" href="./assets/images/logo.jpeg">
+  <link rel="icon" href="./img/logo.jpeg">
 
   <!-- Bootstrap CSS Files -->
-  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- build:css css/main.css -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">  
+  <!-- endbuild -->
 
   <title>Nanarse</title>
   
+  
+</head>
 
 <body> 
+
 <!-- Add your content of header -->
 <header>
   <nav class="nav1bar1 nav1bar1-default active">
@@ -38,7 +42,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="nav1bar1-brand" href="./index.html" title="Nanarse">
-          <img src="./assets/images/logo.jpeg" class="nav1bar1-logo-img" alt="Nanarse-logo" height="40px" width="50px">
+          <img src="./img/logo.jpeg" class="nav1bar1-logo-img" alt="Nanarse-logo" height="40px" width="50px">
           Nanarse
         </a>
       </div>
@@ -104,7 +108,7 @@
                 <div class="carousel1-inner" role="listbox">
 
                     <div class="item active">
-                        <img class="img-responsive" src="./assets/images/nurse.jpg" alt="First slide">
+                        <img class="img-responsive" src="./img/nurse.jpg" alt="First slide">
                         <div class="carousel1-caption card1-shadow reveal">
                           
                           <h-3 class="mr-1">Nursing Servies</h-3>
@@ -131,7 +135,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img class="img-responsive" src="./assets/images/physical-therapy.jpg" alt="First slide">
+                        <img class="img-responsive" src="./img/physical-therapy.jpg" alt="Second slide">
                         <div class="carousel1-caption card1-shadow reveal">
 
                           <h-3>Physical Therapy</h-3>
@@ -158,7 +162,7 @@
                         </div>
                     </div>
                     <div class="item">
-                      <img class="img-responsive" src="./assets/images/speech-therapy.jpg" alt="First slide">
+                      <img class="img-responsive" src="./img/speech-therapy.jpg" alt="Third slide">
                       <div class="carousel1-caption card1-shadow reveal">
 
                         <h-3>Speech Therapy</h-3>
@@ -267,7 +271,7 @@
                 </div>
               </form>
             </div>
-            <div class="card1-image col1-xs-12" style="background-image: url('/assets/images/online-nursing-service.jpg')" id="last-img">
+            <div class="card1-image col1-xs-12" style="background-image: url('./img/online-nursing-service.jpg')" id="last-img">
             </div>
           </div>
         </div>  
@@ -294,8 +298,8 @@
           </div>
           <div class="col1-xs-12 col1-sm-5">
             <p class="para">
-              <a href="https://www.facebook.com/profile.php?id=100004766675410" class="social-round-icon white-round-icon fa-icon" title="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+              <a href="https://www.facebook.com/profile.php?id=100004766675410" class="social-round-icon white-round-icon fa-icon"  style="font-size: 15px;" title="">
+                <i class="fa fa-facebook"></i>
               </a>
               <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -325,8 +329,10 @@
 
 <!-- in order to work collapseable behaviour of nav1bar1 in smaller screens, keep the exact order of js files as below -->
 <!-- javaScript files -->
+<!-- build:js js/main.js -->
 <script src="./js/jquery.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/main.0cf8b554.unminifyed.js"></script>
+<script src="./js/main.0cf8b554.unminifyed.js"></script>
+<!-- endbuild -->
 </body>
 </html>

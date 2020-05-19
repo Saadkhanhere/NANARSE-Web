@@ -13,17 +13,18 @@
     
     
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-    <link rel="icon" href="./assets/images/logo.jpeg">
+    <link rel="icon" href="./img/logo.jpeg">
     
-    <link href="./all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <!-- in order to work collapseable behaviour of nav1bar1 in smaller screens, keep the exact order of js files as below -->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS Files -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">  
+    <!-- endbuild -->
+    
     
     <title>Nanarse</title>
     
-    <link href="./styles.css" rel="stylesheet">
 </head>
 <body id="pagebody">
   <header class="fixed-top">
@@ -37,7 +38,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="nav1bar1-brand" href="./index.html" title="Nanarse">
-              <img src="./assets/images/logo.jpeg" class="nav1bar1-logo-img" alt="Nanarse-logo" height="40px" width="50px">
+              <img src="./img/logo.jpeg" class="nav1bar1-logo-img" alt="Nanarse-logo" height="40px" width="50px">
               Nanarse
             </a>
           </div>
@@ -184,22 +185,12 @@
     scrollRevelation('.reveal');
   });
 </script>
-  <!-- Carousel using one button/advanced way -->
-  <!-- <script>
-    $("#carouselButton").click(function(){
-        if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-            $("#mycarousel").carousel('pause');
-            $("#carouselButton").children("span").removeClass('fa-pause');
-            $("#carouselButton").children("span").addClass('fa-play');
-        }
-        else if ($("#carouselButton").children("span").hasClass('fa-play')){
-            $("#mycarousel").carousel('cycle');
-            $("#carouselButton").children("span").removeClass('fa-play');
-            $("#carouselButton").children("span").addClass('fa-pause');                    
-        }
-    });
-</script> -->
-
-<script type="text/javascript" src="./main.0cf8b554.unminifyed.js"></script>   
+<!-- in order to work collapseable behaviour of nav1bar1 in smaller screens, keep the exact order of js files as below -->
+<!-- javaScript files --> 
+<!-- build:js js/main.js -->
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.0cf8b554.unminifyed.js"></script>
+<!-- endbuild -->
 </body>
 </html>

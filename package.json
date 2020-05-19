@@ -6,8 +6,20 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "clean": "rimraf dist",
+    "copyicons": "copyfiles -f webfonts/* dist/webfonts",
+    "imagemin": "imagemin img/* --out-dir=dist/img",
+    "usemin": "usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin wallet.html -d dist --htmlmin -o dist/wallet.html && usemin nurse.html -d dist --htmlmin -o dist/nurse.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyicons && npm run usemin"
   },
   "author": "Saad Khan",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  }
 }
